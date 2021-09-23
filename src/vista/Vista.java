@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Vista {
     private static Scanner teclado=new Scanner(System.in);
+    //CADENAS CONSTANTES
     public static final String PEDIR_RUTA="Introduce la ruta: ";
     public static final String PERMISO_EJECUCION="X";
     public static final String PERMISO_ESCRITURA="W";
