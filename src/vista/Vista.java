@@ -12,6 +12,7 @@ public class Vista {
     public static final String ES_DIRECTORIO="+---";
     public static final String NO_PERMISO="_";
 
+
     public static String imprimirYLeerRuta(){
         System.out.println(PEDIR_RUTA);
         return teclado.nextLine();
@@ -36,7 +37,6 @@ public class Vista {
         String ejecutable="";
         if(esEjecutable){
             ejecutable=PERMISO_EJECUCION;
-            
         }else{
             ejecutable=NO_PERMISO;
         }
@@ -46,7 +46,6 @@ public class Vista {
         String leible="";
         if(esLeible){
             leible=PERMISO_LECTURA;
-
         }else{
             leible=NO_PERMISO;
         }
@@ -56,7 +55,6 @@ public class Vista {
         String escribible="";
         if(esEscribible){
             escribible=PERMISO_ESCRITURA;
-
         }else{
             escribible=NO_PERMISO;
         }

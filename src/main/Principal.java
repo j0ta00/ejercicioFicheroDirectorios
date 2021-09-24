@@ -9,10 +9,12 @@ public class Principal {
 
     public static void main(String[] args) {
         int numeroTabulaciones=0;
-        FileAcces gestoraFicheros=new FileAcces(Vista.imprimirYLeerRuta());//declaración objeto gestora de ficheros
+        FileAcces gestoraFicheros;
+        do{//bucle para comprobar si la ruta es correcta o no
+            gestoraFicheros=new FileAcces(Vista.imprimirYLeerRuta());
+        }while(!gestoraFicheros.exists());
         gestoraFicheros.leerContenidoDirectorio(numeroTabulaciones);
     }
-
     /**
      * Cabecera:public static void enviarDatosFichero(int numeroTabulaciones,boolean ejecutable,boolean escribible, boolean leible, boolean ficheroODir, String nombre)
      * Proposito:Comunicar los datos obtenidos del fichero a la vista que se encargará de representarlos
